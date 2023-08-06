@@ -10,6 +10,7 @@ import pandas as pd
 
 source = pd.read_excel("dados.xlsx")
 
-#removing a few cols
 source = source.drop(columns=['nome_4md','regiao', 'atbt', 'qtde_u_csrecebem_os_creditos', 'n_sistemas'])
+
+source2 = source[data.uf.str.contains("PR", na=false)]
 
